@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Modesto - Student Portfolio</title>
+    <meta
+    name="description"
+    content="Welcome to Oliver's portfolio. Explore my projects, 
+    skills, and professional journey in web development, design, and programming. 
+    Let's connect!." />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">OwiDev</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="profile-picture-container">
+                    <div class="profile-picture">
+                        <img src="./images/oliver-w-modesto.jpg" alt="Jane Doe" />
+                    </div>
+                </div>
+                <h1>Oliver Modesto</h1>
+                <p>👋 Hey there! I'm a passionate software development student with a knack for problem-solving and a love for technology. Currently pursuing Software Development at BYU-Idaho, I'm dedicated to crafting innovative solutions using Python, Javascript, Kotlin, PHP, and tools like Django, VS Code, and SQL.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <!-- Skills will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <!-- Projects will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form" action="https://formsubmit.co/olivermodesto87@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_subject" value="New submission from Portfolio!">
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Oliver Modesto. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
