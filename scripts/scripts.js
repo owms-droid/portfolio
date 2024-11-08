@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Skills data
     const skills = [
-        "JavaScript", "HTML", "CSS", "React", "Node.js", 
+        "JavaScript", "HTML", "CSS", "C#", "Node.js", 
         "Python", "SQL", "Git", "Django", "Responsive Design"
     ];
 
