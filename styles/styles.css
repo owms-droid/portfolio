@@ -1,9 +1,10 @@
 :root {
-    --bg-color: #1a1a2e;
-    --text-color: #e0e0e0;
-    --accent-color: #0f3460;
-    --secondary-color: #16213e;
-    --highlight-color: #e94560;
+    --bg-color: #213a57;
+    --secondary-color: #0b6477;
+    --text-color: #14919b;
+    --accent-color: #0ad1c8;
+    --decorative-color: #45dfb1;
+    --highlight-color: #80ed99;
 }
 
 body {
@@ -19,10 +20,11 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    padding: 0px 20px 0px 20px;
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -39,6 +41,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--decorative-color);
 }
 
 .nav-links {
@@ -74,7 +77,7 @@ nav {
     height: 3px;
     margin: 5px 0;
     position: relative;
-    background-color: var(--text-color);
+    background-color: var(--decorative-color);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -111,14 +114,23 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #213a57 0%, #16213e 100%);
+    background-image: url('/images/rectangle-bg.png');
+}
+
+#home > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    line-height: 0.5;
 }
 
 .profile-picture-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-bottom: 2rem;
     padding: 2rem 0;
     background: radial-gradient(circle, rgba(15,52,96,0.6) 0%, rgba(26,26,46,0) 70%);
@@ -129,8 +141,8 @@ h1, h2 {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--accent-color);
-    box-shadow: 0 0 20px rgba(233,69,96,0.5);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px #80ed99;
 }
 
 .profile-picture img {
@@ -139,8 +151,13 @@ h1, h2 {
     object-fit: cover;
 }
 
+.quote {
+    line-height: 0.5;
+}
+
 #skills {
     background: linear-gradient(45deg, #16213e 0%, #1a1a2e 100%);
+    text-align: center;
 }
 
 .skills-container, .projects-container {
@@ -158,20 +175,23 @@ h1, h2 {
 
 .skill-card:hover, .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(233,69,96,0.2);
+    box-shadow: 0 5px 15px #80ed99;
 }
 
 #projects {
     background: linear-gradient(225deg, #1a1a2e 0%, #16213e 100%);
+    text-align: center;
 }
 
 #contact {
     background: linear-gradient(315deg, #16213e 0%, #1a1a2e 100%);
+    text-align: center;
 }
 
 form {
     display: grid;
     gap: 1rem;
+    justify-items: center;
 }
 
 input, textarea {
@@ -185,7 +205,7 @@ input, textarea {
 
 button {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: var(--bg-color);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -194,15 +214,15 @@ button {
 }
 
 button:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--decorative-color);
     transform: translateY(-2px);
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
