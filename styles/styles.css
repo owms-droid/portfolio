@@ -115,7 +115,7 @@ h1, h2 {
     align-items: center;
     text-align: center;
     background: linear-gradient(135deg, #213a57 0%, #16213e 100%);
-    background-image: url('./images/rectangle-bg.png');
+    background-image: url('/images/rectangle-bg.png');
 }
 
 #home > .container {

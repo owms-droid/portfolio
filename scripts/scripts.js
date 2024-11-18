@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Projects data
     const projects = [
-        { name: "E-commerce Platform", description: "Built a full-stack e-commerce site using MERN stack" },
+        { name: "Chamber of Commerce Site", description: "Built a full-stack Chamber of Commerce site using HTML, JavaScript, and CSS" },
         { name: "Weather App", description: "Developed a weather application using vanilla JavaScript and OpenWeatherMap API" },
         { name: "Task Manager", description: "Created a task management app with user authentication using Node.js and MongoDB" }
     ];
