@@ -114,7 +114,7 @@ h1, h2 {
     align-items: center;
     text-align: center;
     background: linear-gradient(135deg, #213a57 0%, #16213e 100%);
-    background-image: url('images/bg.jpg');
+    background-image: url('/images/rectangle-bg.png');
 }
 
 #home > .container {
@@ -124,6 +124,26 @@ h1, h2 {
     justify-content: space-evenly;
     text-align: left;
     line-height: 0.5;
+}
+
+.info-section h1 {
+    color: white; 
+    font-size: 170px; 
+    opacity: 35%; 
+    font-weight: bolder; 
+    text-align: left;
+}
+
+.info-section p {
+    color: whitesmoke; 
+    font-size: 40px; 
+    font-weight: bolder;
+}
+
+.info-section hr {
+    border: 2px solid #45dfb1; 
+    width: 25%; 
+    border-radius: 10px;
 }
 
 .profile-picture-container {
@@ -136,8 +156,8 @@ h1, h2 {
 }
 
 .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--accent-color);
@@ -150,9 +170,19 @@ h1, h2 {
     object-fit: cover;
 }
 
-.socials>a {
+.socials a {
     flex-direction: row;
     padding: 15px;
+}
+
+.socials hr {
+    border: 2px solid #45dfb1; 
+    width: 45%; 
+    border-radius: 10px;
+}
+
+.socials img {
+    width: 48px;
 }
 
 #skills {
@@ -226,6 +256,7 @@ footer {
     color: var(--highlight-color);
 }
 
+/*RESPONSIVE STYLES*/
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -250,8 +281,30 @@ footer {
         display: block;
     }
 
+    #home > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 0.5;
+    }
+
+    .info-section h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .info-section hr {
+        width: 100%;
+    }
+
     .profile-picture {
         width: 150px;
         height: 150px;
+    }
+
+    .socials img {
+        width: 38px;
     }
 }
