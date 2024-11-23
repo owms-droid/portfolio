@@ -39,7 +39,7 @@ nav {
 }
 
 .logo>img {
-    width: 15%;
+    width: 12%;
 }
 
 .nav-links {
@@ -257,7 +257,7 @@ footer {
 }
 
 /*RESPONSIVE STYLES*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -306,5 +306,9 @@ footer {
 
     .socials img {
         width: 38px;
+    }
+    
+    .logo>img {
+        width: 20%;
     }
 }
