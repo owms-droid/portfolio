@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Skills data
     const skills = [
         "JavaScript", "HTML", "CSS", "C#", "Node.js", 
-        "Python", "SQL", "Git", "Django", "Responsive Design"
+        "Python", "SQL", "Git", "Django", ".NET"
     ];
 
     // Populate skills
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Projects data
     const projects = [
-        { name: "Chamber of Commerce Site", description: "Built a full-stack Chamber of Commerce site using HTML, JavaScript, and CSS" },
-        { name: "Weather App", description: "Developed a weather application using vanilla JavaScript and OpenWeatherMap API" },
-        { name: "Task Manager", description: "Created a task management app with user authentication using Node.js and MongoDB" }
+        { name: "Chamber of Commerce Site", description: "Built a full-stack Chamber of Commerce site using HTML, JavaScript, and CSS", link: "https://owms-droid.github.io/wdd231/chamber/" },
+        { name: "Scoreboard Web App", description: "Developed a simple scoreboard application using JavaScript and CSS", link: "https://oliver-simple-scoreboard.netlify.app/" },
+        { name: "Asteroids Game", description: "Created a game with Python, applying concepts like Inheritance, Polymorphism", link: "http://www.google.com" }
     ];
 
     // Populate projects
@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         projectCard.innerHTML = `
             <h3>${project.name}</h3>
             <p>${project.description}</p>
+            <a href="${project.link}" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
         `;
         projectsContainer.appendChild(projectCard);
     });
