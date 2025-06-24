@@ -1,0 +1,118 @@
+{
+  "developer": {
+    "name": "Oliver Modesto",
+    "title": "Junior Web Developer",
+    "location": "Amarilis, Huánuco, Peru",
+    "email": "olivermodesto87@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/oliver-modesto",
+    "github": "https://github.com/owms-droid",
+    "portfolio_website": "https://olivermodesto.netlify.app/",
+    "bio": "Web developer skilled in Python, JavaScript, C#, and MySQL. Passionate about developing responsive, user-friendly web applications and learning modern technologies to deliver innovative, scalable solutions."
+  },
+  "skills": {
+    "frontend": [
+      "JavaScript (ES6+)",
+      "React",
+      "HTML5",
+      "CSS3"
+    ],
+    "backend": [
+      "Node.js",
+      "Python",
+      "Django"
+    ],
+    "databases": [
+      "MySQL",
+      "Firebase"
+    ],
+    "devops_tools": [
+      "AWS",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "Git"
+    ],
+    "testing": [
+      "React Testing Library",
+      "Pytest"
+    ],
+    "marketing": [
+      "Digital Marketing",
+      "Content Marketing",
+      "Google Ads",
+      "Meta Ads",
+      "Data Analysis",
+      "SEO",
+      "Google Analytics",
+      "Social Media Marketing",
+      "WordPress"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Trainee Web Developer",
+      "company": "CTI Procesos",
+      "duration": "Apr 2021 - Jul 2022",
+      "description": "Developed and maintained several websites using JavaScript and Django. Implemented new features based on user feedback and market trends. Played a key role in debugging and resolving production issues.",
+      "responsibilities": [
+        "Built responsive user interfaces with JavaScript and HMTL.",
+        "Developed custom Django models and views to support new functionalities."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Chamber of Commerce Site (University Project)",
+      "description": "A full-stack demo website for the Chamber of Commerce from Huanuco. Built with JavaScript, HTML, and CSS. Includes a weather section, directory of businesses, and form to join the chamber.",
+      "technologies": ["JavaScript", "HTML", "CSS3"],
+      "github_link": "https://github.com/owms-droid/wdd231/tree/main/chamber",
+      "live_demo": "https://owms-droid.github.io/wdd231/chamber/"
+    },
+    {
+      "name": "Scoreboard Web App (Personal Project)",
+      "description": "Developed a useful scoreboard application to count the points made in soccer, volleyball, basketball etc. matches.",
+      "technologies": ["JavaScript", "HMTL", "CSS3"],
+      "github_link": "https://github.com/owms-droid/Scrimba-Scoreboard",
+      "live_demo": "https://oliver-simple-scoreboard.netlify.app/"
+    },
+    {
+      "name": "Landing Page (Trainee Project)",
+      "description": "Developed a landing page in collaboration with a senior dev for a small business, focusing on improved user experience and performance. Achieved a 25% increase in conversion rates post-redesign.",
+      "technologies": ["Vue.js", "Firebase", "Stripe API"],
+      "github_link": "https://github.com/owms-droid",
+      "live_demo": "https://ctiprocesos.com/"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Development",
+      "university": "Brigham Young University - Idaho",
+      "duration": "Sept 2024 - present",
+      "details": "Specialized in Web Development and Software Development."
+    },
+    {
+      "degree": "Bachelor of Business in Marketing",
+      "university": "University of Huanuco",
+      "duration": "Mar 2010 - Dec 2014",
+      "details": "Specialized in digital marketing and international business."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer Associate",
+      "issuer": "Amazon Web Services",
+      "date": "March 2023"
+    },
+    {
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "issuer": "Cloud Native Computing Foundation (CNCF)",
+      "date": "July 2022"
+    }
+  ],
+  "interests": [
+    "Digital Marketing",
+    "Mentoring",
+    "Business Development",
+    "Cloud Computing",
+    "Artificial Intelligence"
+  ]
+}
