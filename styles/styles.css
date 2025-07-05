@@ -127,23 +127,100 @@ body {
 }
 
 /* main styles here */
-main {
-    background-color: var(--secondary-color);
-    height: 80vh; /* Full viewport height */
-    width: 100%;
-}
-
 .intro {
+    background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    height: 100%;
+    align-items: center;
+    min-height: 60vh;
 }
 
 .left {
     grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2vw;
 }
 
 .right {
     grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.animated-text {
+    font-size: 2rem;
+    font-weight: 600;
+    min-height: 2.5em;
+    letter-spacing: 1px;
+    color: var(--tertiary-color);
+    white-space: pre;
+}
+
+.animated-text::after {
+    content: '|';
+    animation: blink 1s steps(1) infinite;
+    margin-left: 2px;
+    color: var(--tertiary-color); /* Or your preferred color */
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.carousel-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    opacity: 0;
+    transition: 
+        transform 0.7s cubic-bezier(.77,0,.18,1),
+        opacity 0.7s cubic-bezier(.77,0,.18,1);
+    z-index: 0;
+    filter: blur(2px) brightness(0.7);
+    pointer-events: none;
+}
+
+.carousel-img.active {
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(0);
+    filter: none;
+    pointer-events: auto;
+}
+
+.carousel-img.prev {
+    opacity: 0.5;
+    z-index: 1;
+    transform: translateY(-60%);
+}
+
+.carousel-img.next {
+    opacity: 0.5;
+    z-index: 1;
+    transform: translateY(60%);
 }
 
 /* Footer styles here */
@@ -230,6 +307,21 @@ footer img {
     }
     .contact {
         margin-left: 0;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        min-height: 40vh;
+    }
+    .left, .right {
+        grid-column: auto;
+        padding: 4vw 0;
+        align-items: center;
+        text-align: center;
+    }
+    .carousel img {
+        max-width: 90vw;
     }
 
     .footer-bar {
