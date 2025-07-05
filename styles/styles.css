@@ -131,10 +131,12 @@ body {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 0px;
     height: 100%;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 .left {
@@ -143,7 +145,32 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 2vw;
+}
+
+.left .greet {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.left h1 {
+    font-size: 3.5rem;
+    color: var(--white-color);
+}
+
+.left p,
+.left h1,
+.left span {
+    margin-top: 2px; /* Reducing separation between elements */
+    margin-bottom: 2px; /* Or 0, or any value you prefer */
+}
+
+.extra {
+    color: var(--white-color);
+}
+
+.const {
+    color: var(--primary-color);
+    font-size: 1rem;
 }
 
 .right {
@@ -151,15 +178,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vw;
 }
 
 .animated-text {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     min-height: 2.5em;
     letter-spacing: 1px;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     white-space: pre;
 }
 
@@ -277,7 +302,7 @@ footer img {
     height: 20px;
 }
 
-/* Responsive styles for header, nav and footer*/
+/* Responsive styles for header, nav, main and footer*/
 @media (max-width: 900px) {
     .sub-navbar {
         flex-wrap: wrap;
@@ -311,7 +336,7 @@ footer img {
 
     .intro {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 0px;
         min-height: 40vh;
     }
     .left, .right {
