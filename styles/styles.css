@@ -6,6 +6,8 @@
     --primary-color: #C8ACD6;
     --secondary-color: #433D8B;
     --tertiary-color: #2E236C;
+    --highlighted-color: #04e3dc;
+    --link-color: #c20087;
     --background-color: #17153B;
 }
 
@@ -128,7 +130,7 @@ body {
 
 /* main styles here */
 .intro {
-    background-color: var(--secondary-color);
+    background-color: rgba(var(--secondary-color), 0.2); /*fix this*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
@@ -173,6 +175,17 @@ body {
     font-size: 1rem;
 }
 
+.const a {
+    font-size: small;
+    color: var(--link-color);
+    font-weight: 500;
+}
+
+.var {
+    color: var(--highlighted-color);
+    font-size: 1rem;
+}
+
 .right {
     grid-column: 2;
     display: flex;
@@ -192,7 +205,7 @@ body {
     content: '|';
     animation: blink 1s steps(1) infinite;
     margin-left: 2px;
-    color: var(--tertiary-color); /* Or your preferred color */
+    color: var(--primary-color); /* Or your preferred color */
 }
 
 @keyframes blink {
@@ -204,25 +217,26 @@ body {
     position: relative;
     width: 100%;
     max-width: 350px;
-    height: 220px;
+    height: 320px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
     background: transparent;
 }
 
 .carousel-img {
     position: absolute;
-    left: 0;
     width: 100%;
-    max-width: 350px;
-    height: 220px;
+    transform: translateY(60%);
     object-fit: cover;
     opacity: 0;
     transition: 
-        transform 0.7s cubic-bezier(.77,0,.18,1),
-        opacity 0.7s cubic-bezier(.77,0,.18,1);
+        transform 1s ease-in-out,
+        opacity 1s ease-in-out;
     z-index: 0;
     filter: blur(2px) brightness(0.7);
     pointer-events: none;
