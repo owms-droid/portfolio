@@ -5,6 +5,7 @@
     --white-color: #FFFFFF;
     --primary-color: #C8ACD6;
     --secondary-color: #433D8B;
+    --secondary-color-rgba: 67, 61, 139; /* For rgba usage */
     --tertiary-color: #2E236C;
     --highlighted-color: #04e3dc;
     --link-color: #c20087;
@@ -130,7 +131,7 @@ body {
 
 /* main styles here */
 .intro {
-    background-color: rgba(var(--secondary-color), 0.2); /*fix this*/
+    background-color: rgba(var(--secondary-color-rgba), 0.2); /*fix this*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
