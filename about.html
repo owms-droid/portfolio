@@ -26,10 +26,12 @@
     <link rel="icon" href="images/favicon.ico"> <!-- Favicon for the website -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
 
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/home-animations.js" defer></script>
     <script src="./scripts/date.js" defer></script>
+    <script src="./scripts/about.js" defer></script>
 </head>
 <body>
     <header>
@@ -56,13 +58,29 @@
     </header>
 
     <main>
-        <div class="intro">
-            <div class="left">
-                
-            </div>
-            <div class="right">
-                
-            </div>
+        <div class="about-container">
+            <nav class="about-menu">
+                <ul>
+                    <li><button class="about-link active" data-section="bio">_bio</button></li>
+                    <li><button class="about-link" data-section="experience">_experience</button></li>
+                    <li><button class="about-link" data-section="education">_education</button></li>
+                    <li><button class="about-link" data-section="interests">_interests</button></li>
+                </ul>
+            </nav>
+            <section class="about-content">
+                <div class="about-section" id="bio">
+                    <p>Hi, I'm Oliver Modesto, a passionate junior web developer skilled in Python, JavaScript, C#, and MySQL. I love building responsive, user-friendly web applications and learning new technologies.</p>
+                </div>
+                <div class="about-section" id="experience">
+                    <p>Intern at Tech Solutions (2024), Freelance Web Projects, and active contributor to open-source communities.</p>
+                </div>
+                <div class="about-section" id="education">
+                    <p>B.Sc. in Computer Science, Online certifications in Full Stack Web Development, and continuous self-learning.</p>
+                </div>
+                <div class="about-section" id="interests">
+                    <p>Coding, gaming, digital art, and exploring new programming languages and frameworks.</p>
+                </div>
+            </section>
         </div>
     </main>
 
