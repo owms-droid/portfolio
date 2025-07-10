@@ -46,9 +46,15 @@
 }
 
 .about-section {
-    width: 100%;
+    font-family: 'Fira Code', 'Fira Mono', 'Consolas', monospace;
+    background: var(--background-color);
+    border-radius: 8px;
+    padding: 24px 14px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     display: none;
-    animation: fadeIn 0.4s;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .about-section.active {
@@ -58,6 +64,40 @@
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px);}
     to { opacity: 1; transform: translateY(0);}
+}
+
+.token {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    min-height: 1.5em;
+    word-break: break-word;
+}
+
+.linenumber {
+    display: inline-block;
+    width: 2em;
+    text-align: right;
+    margin-right: 14px;
+    opacity: 0.5;
+}
+
+.token:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.experience-item {
+    color: var(--white-color);
+}
+
+.role {
+    font-weight: bold;
+    color: var(--highlighted-color);
+}
+
+.company {
+    font-weight: bold;
+    color: var(--link-color);
 }
 
 /* Responsive styles */
@@ -83,5 +123,16 @@
     }
     .about-content {
         padding: 24px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        font-size: 0.85rem;
+        padding: 14px 10px;
+    }
+    .linenumber {
+        width: 1.5em;
+        margin-right: 10px;
     }
 }
