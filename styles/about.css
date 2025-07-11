@@ -100,6 +100,98 @@
     color: var(--link-color);
 }
 
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    background: rgba(var(--secondary-color-rgba), 0.12);
+    border-radius: 7px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    transition: background 0.2s;
+    position: relative;
+}
+
+.education-item:hover {
+    background: rgba(var(--secondary-color-rgba), 0.22);
+}
+
+.edu-icon {
+    font-size: 2rem;
+    margin-right: 16px;
+    color: var(--highlighted-color);
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.12));
+}
+
+.edu-title {
+    font-weight: 600;
+    color: var(--highlighted-color);
+    margin-right: 12px;
+    font-size: 1rem;
+}
+
+.edu-details {
+    font-size: 0.9rem;
+    color: var(--white-color);
+    font-style: italic;
+}
+
+.interests-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.interest-card {
+    background: rgba(var(--secondary-color-rgba), 0.13);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background 0.2s, transform 0.2s;
+    position: relative;
+    min-height: 140px;
+}
+
+.interest-card:hover {
+    background: rgba(var(--secondary-color-rgba), 0.22);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.interest-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: var(--highlighted-color);
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.12));
+}
+
+.interest-title {
+    font-weight: 600;
+    color: var(--highlighted-color);
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+.interest-desc {
+    font-size: 0.98rem;
+    color: #bdbdbd;
+    line-height: 1.5;
+}
+
 /* Responsive styles */
 @media (max-width: 900px) {
     .about-container {
@@ -134,5 +226,30 @@
     .linenumber {
         width: 1.5em;
         margin-right: 10px;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 10px;
+    }
+    .edu-icon {
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+    .edu-title {
+        margin-right: 0;
+    }
+    .interests-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .interest-card {
+        padding: 16px 10px;
+        min-height: 100px;
+    }
+    .interest-icon {
+        font-size: 1.7rem;
+        margin-bottom: 8px;
     }
 }
