@@ -84,6 +84,14 @@
       "image": "images/cti-landing.png",
       "github_link": "https://github.com/owms-droid",
       "live_demo": "https://ctiprocesos.com/"
+    },
+    {
+      "name": "CTI Roads APP (Landing Page)",
+      "description": "Landing page for a mobile app dedicated to outsource enterprise services, the purpose was to showcase the app to potential subscribers.",
+      "technologies": ["Bootstrap", "CSS3", "JavaScript"],
+      "image": "images/ctiroads-official.png",
+      "github_link": "",
+      "live_demo": "http://www.ctiroads.com/"
     }
   ],
   "education": [
