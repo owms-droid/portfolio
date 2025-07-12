@@ -1,0 +1,119 @@
+.projects-section {
+    padding: 40px 0;  
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    padding: 0 24px;
+}
+
+.project-card {
+    background: rgba(var(--secondary-color-rgba), 0.13);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    min-height: 420px;
+    position: relative;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 24px rgba(67,61,139,0.13);
+    transform: translateY(-4px) scale(1.02);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 22px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-title {
+    color: var(--highlighted-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project-desc {
+    color: var(--white-color);
+    font-size: 1rem;
+    margin-bottom: 14px;
+    flex: 1;
+}
+
+.project-tags {
+    margin-bottom: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 0.92rem;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.project-link {
+    align-self: flex-start;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.project-link:hover {
+    background: var(--link-color);
+    color: var(--white-color);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 22px;
+    }
+    .project-image {
+        height: 140px;
+    }
+    .project-card {
+        min-height: 340px;
+    }
+}
