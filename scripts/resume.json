@@ -92,6 +92,14 @@
       "image": "images/ctiroads-official.png",
       "github_link": "",
       "live_demo": "http://www.ctiroads.com/"
+    },
+    {
+      "name": "CTI Roads (Landing Page)",
+      "description": "Developed the landing website for CTI Roads, a site focused on getting leads. The site features a modern design and responsive layout.",
+      "technologies": ["WordPress", "CSS3", "JavaScript"],
+      "image": "images/cti-roads-landing.png",
+      "github_link": "",
+      "live_demo": "https://nosotros.ctiroads.com/"
     }
   ],
   "education": [
