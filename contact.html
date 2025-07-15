@@ -26,10 +26,12 @@
     <link rel="icon" href="images/favicon.ico"> <!-- Favicon for the website -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/home-animations.js" defer></script>
     <script src="./scripts/date.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
 </head>
 <body>
     <header>
@@ -42,10 +44,8 @@
                     <li><a href="./index.html">_hello</a></li>
                     <li><a href="./about.html">_about-me</a></li>
                     <li><a href="./projects.html">_projects</a></li>
+                    <li><a href="./contact.html" class="active">_contact-me</a></li>
                 </ul>
-                <div class="contact">
-                    <a href="./contact.html" class="active">_contact-me</a>
-                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -56,12 +56,41 @@
     </header>
 
     <main>
-        <div class="intro">
-            <div class="left">
-                
+        <div class="intro contact-intro">
+            <div class="left contact-info">
+                <h2>Contact Me</h2>
+                <p>Let's connect! Fill out the form and I'll get back to you soon.</p>
+                <div class="contact-code-block">
+                    <div class="code-line"><span class="code-linenumber">1</span> <span class="code-comment"></span></div>
+                    <div class="code-line"><span class="code-linenumber">2</span> <span class="code-keyword">function</span> <span class="code-func">sendMessage</span>(<span class="code-param">form</span>) {</div>
+                    <div class="code-line"><span class="code-linenumber">3</span> &nbsp;&nbsp;<span class="code-keyword">if</span> (<span class="code-func">validateCaptcha</span>(form.captcha)) {</div>
+                    <div class="code-line"><span class="code-linenumber">4</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-func">submitForm</span>(form);</div>
+                    <div class="code-line"><span class="code-linenumber">5</span> &nbsp;&nbsp;} <span class="code-keyword">else</span> {</div>
+                    <div class="code-line"><span class="code-linenumber">6</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-func">showError</span>(<span class="code-string">'Captcha incorrect!'</span>);</div>
+                    <div class="code-line"><span class="code-linenumber">7</span> &nbsp;&nbsp;}</div>
+                    <div class="code-line"><span class="code-linenumber">8</span> }</div>
+                    <div class="code-line"><span class="code-linenumber">9</span> <span class="code-comment"></span></div>
+                </div>
             </div>
-            <div class="right">
-                
+            <div class="right contact-form-container">
+                <form id="contact-form" autocomplete="off">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Type your message..."></textarea>
+
+                    <div class="captcha-block">
+                        <span id="captcha-question"></span>
+                        <input type="text" id="captcha-answer" name="captcha" required placeholder="Answer">
+                    </div>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                    <div id="form-status"></div>
+                </form>
             </div>
         </div>
     </main>
