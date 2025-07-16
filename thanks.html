@@ -3,70 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Jane Doe Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #1a1a2e;
-            --text-color: #e0e0e0;
-            --accent-color: #0f3460;
-            --secondary-color: #16213e;
-            --highlight-color: #e94560;
-        }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: var(--text-color);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    <title>Thank you!</title>
+    <meta name="author" content="Oliver M.">
+    <meta name="description" content="Junior Web developer skilled in Python, JavaScript, C#, and MySQL. Passionate about developing responsive, 
+    user-friendly web applications and learning modern technologies to deliver innovative, scalable solutions.">
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: rgba(22, 33, 62, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    <meta property="og:title" content="Junior Web Developer - Oliver M.">
+    <meta property="og:description" content="Junior Web developer skilled in Python, JavaScript, C#, and MySQL. Passionate about developing responsive, 
+    user-friendly web applications and learning modern technologies to deliver innovative, scalable solutions.">
+    <meta property="og:image" content="https://owms-droid.github.io/portfolio/images/portfolio-view.png">
+    <meta property="og:image:alt" content="Oliver's Portfolio">
+    <meta property="og:site_name" content="Junior Web Developer | Oliver M.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olivermodesto.netlify.app/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:alt" content="Junior Web Developer Portfolio">
 
-        h1 {
-            color: var(--highlight-color);
-            margin-bottom: 1rem;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico"> <!-- Favicon for the website -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/thanks.css">
 
-        p {
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--text-color);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--highlight-color);
-            transform: translateY(-2px);
-        }
-    </style>
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/home-animations.js" defer></script>
+    <script src="./scripts/date.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
+    <script src="./scripts/thanks.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Thank You!</h1>
-        <p>Your message has been successfully sent. I appreciate your interest and will get back to you as soon as possible.</p>
-        <a href="index.html" class="btn">Return to Portfolio</a>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="sub-navbar">
+                <div class="logo">
+                    <a href="./index.html">_oliver</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">_hello</a></li>
+                    <li><a href="./about.html">_about-me</a></li>
+                    <li><a href="./projects.html">_projects</a></li>
+                    <li><a href="./contact.html" class="active">_contact-me</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thanks-section">
+            <div class="thanks-visual">
+                <!-- You can use an SVG or a large emoji here -->
+                <canvas id="confetti-canvas"></canvas>
+            </div>
+            <div class="thanks-message">
+                <h1>Thank You!</h1>
+                <p>Your message has been sent.<br>
+                I appreciate your interest and will reply as soon as possible.</p>
+                <a href="index.html" class="thanks-home-btn">← Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-left">
+                © Oliver Modesto
+            </div>
+            <div class="footer-center">
+                <span id="date-time">date here</span>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/oliver-modesto/" target="_blank" rel="noopener"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/owms-droid" target="_blank" rel="noopener"><img src="./images/github.png" alt="GitHub"></a>
+                    <a href="https://dev.to/calamitouscoder87" target="_blank" rel="noopener"><img src="./images/dev.png" alt="Dev Community"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
