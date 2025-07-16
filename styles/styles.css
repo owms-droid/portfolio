@@ -110,7 +110,7 @@ body {
 
 /* Hamburger menu styles */
 .hamburger {
-    display: none;
+    display: none; /* Hidden by default */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -118,6 +118,8 @@ body {
     height: 32px;
     cursor: pointer;
     margin-left: 20px;
+    z-index: 20; /* Ensure it appears above other elements */
+    gap: 8px; /* Space between lines */
 }
 
 .hamburger span {
@@ -128,6 +130,7 @@ body {
     margin: 4px 0;
     border-radius: 2px;
     transition: 0.3s;
+    margin: 0;
 }
 
 /* main styles here */
